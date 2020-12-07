@@ -30,7 +30,7 @@ public class RestfulProductController {
 		return plist;
 		
 	}	
-			//reading data
+			//reading DATA
 		@GetMapping(path="/products/{id}",produces="application/json")
 		public Product getProductById(@PathVariable("id")int id) {
 			return productService.getProductById(id);
